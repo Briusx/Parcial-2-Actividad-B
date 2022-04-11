@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de vacunaciones</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Sofia&display=swap" rel="stylesheet">
+<body>
+    
+    <form id="formulario">
+        <div class="form">
+        <h1>Forma de vacunación</h1>
+        <div>
+            <label for="">Nombre completo</label>
+            <input type="text"  id="username" value="" placeholder="Nombre completo">
+        </div>
+        <div>
+            <label for="">Sexo:</label>
+            <select  name="" id="selection">
+                <option value="">Masculino</option>
+                <option value="">Femenino</option>
+                <option value="">Nom binario</option>
+                <option value="">Otro</option>
+            </select>
+        </div>
+        <label for="start">Fecha de nacimiento</label>
+
+        <input type="date" id="start" name="trip-start"
+              value="2018-07-22"
+              min="0-01-01" max="3000-12-31">
+             <br> 
+       
+            <td>
+                ¿Tiene hijos?
+            </td>
+            <td>
+                <input type="radio" name="gender">No
+                <input type="radio" name="gender">Si
+            </td>
+        </tr>
+        <br>
+        <div>
+            <label for="">En caso de tener hijos, especificar cuantos:</label>
+            <input type="number" min="1" max="100">
+        </div>
+        <tr>
+            <td>
+                No. de dósis
+            </td>
+            <td>
+                <form>
+                    <input type="number" min="1" max="100">
+                </form>
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <td>
+                Última vacuna que recibió:
+            </td>
+            <td>
+                <select>
+                   <option>Abdala</option>
+                   <option>Pfizer</option>
+                   <option>CanSino</option>
+                   <option>Coronavac</option>
+                   <option>Covaxin</option>
+                   <option>Johnson & Johnson</option>
+                   <option>Moderna</option> 
+                   <option>AstraZeneca</option> 
+                   <option>Sinopharm BBIBP</option> 
+                   <option>Sputnik</option> 
+                </select>
+            </td>
+        </tr>
+        <br />
+
+
+       <div class="buton-enviar">
+            <input class="submit" id="buton" type="submit" onclick='return enviarFormulario()' value="Enviar">  
+       </div>
+
+       <div id="result"></div>
+       </div>
+             
+    </form>
+</body>
+
+
+</html>
